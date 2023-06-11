@@ -95,7 +95,7 @@ if __name__=="__main__":
     genders={'Male':0,'Female':1}
     data['Gender']=data['Gender'].map(genders).astype(int)
 
-    #those with 2 tend to have normal enzymes level, so they arelikely suffering from liver diseases
+    #those with 2 tend to have normal enzymes level, so they are not likely suffering from liver diseases
     #this mappping seems more logical
     results={2:0,1:1}
     data['Result']=data['Result'].map(results)
